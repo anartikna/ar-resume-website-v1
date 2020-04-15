@@ -502,6 +502,9 @@
 .fa-plane:before {
   content: "\f072";
 }
+.fa-fluid:before {
+  content: "\f773";
+}
 .fa-calendar:before {
   content: "\f073";
 }

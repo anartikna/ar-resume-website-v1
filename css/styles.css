@@ -208,7 +208,7 @@ h6 {
     text-transform: uppercase;
     margin: 0 0 30px;
     font-family: "Anonymous Pro", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1px;
 }
 
@@ -232,7 +232,7 @@ p {
     margin: 0 0 25px;
     font-size: 16px;
     line-height: 1.7;
-    font-family: 'Inconsolata', sans-serif;
+    font-family: 'SF Mono', sans-serif;
     font-weight: 300;
 }
 
@@ -340,11 +340,11 @@ a.active {
 /* ======= NAV BAR ======= */
 
 .light {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .nav > li {
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .navbar {
@@ -477,7 +477,7 @@ a.active {
 }
 
 .navbar-brand.page-scroll {
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-size: 16px;
 }
 
@@ -615,8 +615,8 @@ a.fa.fa-angle-down:focus {
 }
 
 #about p {
-    font-size: 16px;
-    font-weight: 700;
+    font-size: 15px;
+    font-weight: 400;
     max-width: 1550px;
     margin: 10px auto;
 }
@@ -657,7 +657,7 @@ a.fa.fa-angle-down:focus {
 #about #tl-dr h5 {
     font-weight: 300;
     font-size: 14px;
-    font-family: 'Anonymous Pro', sans-serif;
+    font-family: 'SF Mono', sans-serif;
     text-transform: capitalize;
     letter-spacing: 0.5px;
 }

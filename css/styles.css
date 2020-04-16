@@ -207,7 +207,7 @@ h5,
 h6 {
     text-transform: uppercase;
     margin: 0 0 30px;
-    font-family: "Lato", sans-serif;
+    font-family: "Anonymous Pro", sans-serif;
     font-weight: 300;
     letter-spacing: 1px;
 }
@@ -232,9 +232,17 @@ p {
     margin: 0 0 25px;
     font-size: 16px;
     line-height: 1.7;
-    font-family: 'Inconsolas', serif;
+    font-family: 'Inconsolata', sans-serif;
     font-weight: 300;
 }
+
+/*p #about{
+    margin: 0 0 25px;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 500;
+}*/
 
 a {
     color: #00009C;
@@ -529,10 +537,13 @@ a.active {
     font-weight: 300;
     letter-spacing: 3px;
 }
-
+/*part right under the Hi, I am ANkit line*/
 #intro p.subtitle {
     color: #ddd;
+    font-size: 22px;
+    font-weight: 700;
 }
+
 
 .intro-content {
     position: absolute;
@@ -569,7 +580,7 @@ a.active {
 a.fa.fa-angle-down {
     padding: 10px 14px;
     color: #aaa;
-    font-size: 50px;
+    font-size: 120px;
     margin-top: 175px;
     transition: all 0.5s;
 }
@@ -594,7 +605,7 @@ a.fa.fa-angle-down:focus {
 /* ======= ABOUT ======= */
 
 #about {
-    padding-top: 90px;
+    padding-top: 35px;
     padding-bottom: 30px;
 }
 
@@ -605,6 +616,7 @@ a.fa.fa-angle-down:focus {
 
 #about p {
     font-size: 16px;
+    font-weight: 700;
     max-width: 1550px;
     margin: 10px auto;
 }
@@ -618,8 +630,8 @@ a.fa.fa-angle-down:focus {
 }
 
 #about #tl-dr {
-    background: #f0f0f0;
-    color: #555;
+    background: #757575;
+    color: rgb(228, 228, 228);
     text-align: center;
     margin: 0px auto;
     padding: 20px;
@@ -747,91 +759,8 @@ a.fa.fa-angle-down:focus {
         font-size: 34px;
     }
 }
-/* ======= tooltip on hover - css only approach ======= */
 
-/*.tooltip-wrap {
-    position: absolute;
-  }
-  .tooltip-wrap .tooltip-content {
-    display: none;
-    width: 300px;
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-    right: 5%;
-    background-color: #fff;
-    padding: .5em;
-  }
-  .tooltip-wrap:hover .tooltip-content {
-    display: block;
-  }
-*/
-/* ======= SERVICES ======= */
-
-#services {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    background-color: #F0F0F0;
-}
-
-#services h3 {
-    font-weight: 400;
-}
-
-#services p {
-    font-size: 15px;
-    margin: 0px auto 40px auto;
-    max-width: 80%;
-}
-
-#services a {
-    font-weight: 500;
-}
-
-.icon {
-    width: 175px;
-    height: 175px;
-    line-height: 175px;
-    max-width: 100%;
-    background: #00009C;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-    display;
-    block;
-    color: #FFF;
-    font-size: 55px;
-    text-align: center;
-    vertical-align: middle;
-    position: relative;
-    margin: 0 auto 40px;
-}
-
-.icon:hover {
-    -ms-transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-    -webkit-transition: all ease .7s;
-    -moz-transition: all ease .7s;
-    transition: all ease .7s;
-}
-
-@media screen and (max-width: 480px) {
-    #services {
-        padding: 60px 10px;
-    }
-    #services h3 {
-        margin-bottom: 20px;
-    }
-    #services p {
-        font-size: 14px;
-        max-width: 100%;
-    }
-}
-
-
-/* ======= EXPERIENCE ======= */
+/* ======= EXPERIENCE removed styles ======= */
 /*
 #experience {
     padding-top: 100px;
@@ -850,6 +779,147 @@ a.fa.fa-angle-down:focus {
     margin-top: 50px;
 }
 */
+
+/* ======= EXPERIENCE vert tabs======= */
+
+html {
+    box-sizing: border-box;
+  }
+  
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  ::selection {
+    background: yellow;
+  }
+  
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    overflow-x: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-family: system, -apple-system, BlinkMacSystemFont, Roboto,
+      "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    background-color: #eee;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+a1 {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    transition: color 0.25s ease;
+  }
+  
+  p1 {
+    margin: 0;
+  }
+  
+  $spacing: 30px;
+  $purple: #4f2cca;
+  $tab-height: 50px;
+
+.vertcontainer {
+  position: relative;
+  margin: $spacing auto;
+  padding: $spacing;
+  width: 900px;
+  display: flex;
+  align-items: flex-start;
+
+  .tabs {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: max-content;
+
+    .tab {
+      width: 200px;
+      height: $tab-height;
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 10px 0;
+      transition: all 0.25s ease;
+      border-left: 2px solid #ccc;
+
+      &:hover {
+        color: $purple;
+        background-color: rgba(79, 44, 202, 0.1);
+      }
+
+      &.active {
+        color: $purple;
+      }
+
+      @for $i from 1 through 3 {
+        &.tab-#{$i}.active {
+          & ~ .highlighter {
+            transform: translateY(#{($i*$tab-height) - $tab-height});
+          }
+        }
+      }
+      
+    }
+
+    .highlighter {
+      display: block;
+      background: $purple;
+      width: 2px;
+      height: $tab-height;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(0);
+      transition: transform 0.2s ease;
+      transition-delay: 0.1s;
+      z-index: 10;
+    }
+
+    a:first-of-type {
+      border-top-left-radius: 2px;
+    }
+    a:last-of-type {
+      border-top-right-radius: 2px;
+    }
+  }
+
+  .content {
+    position: relative;
+    padding: 0 $spacing;
+
+    &__section {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      z-index: 0;
+      transition: opacity 0s ease;
+
+      &.visible {
+        position: relative;
+        opacity: 1;
+        width: 100%;
+        height: auto;
+        transition: opacity 0.5s ease;
+        z-index: 2;
+      }
+    }
+  }
+}
+
 
 /* New skills bars */
 
@@ -1344,7 +1414,7 @@ a.resume-btn:active {
 }
 
 
-/* ======= experienceeeeeee ======= */
+/* ======= thumbnail experienceeeeeee ======= */
 
 #experience {
     padding-top: 90px;

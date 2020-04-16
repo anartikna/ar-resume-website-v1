@@ -5701,6 +5701,7 @@ button.close {
 }
 .modal-open {
   overflow: hidden;
+  /*z-index: 1039;*/
 }
 .modal {
   position: fixed;
@@ -5756,6 +5757,7 @@ button.close {
   right: 0;
   left: 0;
   background-color: #000;
+ /* z-index: 1038;*/
 }
 .modal-backdrop.fade {
   filter: alpha(opacity=0);
@@ -6564,4 +6566,4 @@ button.close {
     display: none !important;
   }
 }
-/*# sourceMappingURL=bootstrap.css.map */
+/*# sourceMappingURL=bootstrap.css.map*/

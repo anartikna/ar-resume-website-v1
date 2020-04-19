@@ -112,20 +112,29 @@ $(function() {
 
     //cycle through banners
 
-    var slideIndex = 0;
-    carousel();
+$(function() {
+    // set `$.fx.interval` at `0`
+    $.fx.interval = 10;
+    (function cycleBgImage(elem, bgimg) {
+  // `elem`:`#slideshow`
+  // set, reset, delay to `1000` after background image reset
+  elem.css("backgroundImage", bgimg)
+    // fade in background image
+    .fadeTo(1500, 1, "linear", function() {
+      // set `delay` before fadeing out image
+      // fade in background image        
+      $(this).delay(1900, "fx").fadeTo(1900, 0, "linear", function() {
+        // split background image string at comma , creating array
+        var img = $(this).css("backgroundImage").split(","),
+          // concat first background image to `img` array,
+          // remove first background image from `img` array
+          bgimg = img.concat(img[0]).splice(1).join(",");
+        // recursively call `cycleBgImage`
+        cycleBgImage(elem, bgimg);
+      });
+    });
+    }($("#intro")));
+  });
 
-    function carousel() {
-        var i;
-         var x = document.getElementsByClassName("intro");
-     for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-         }
-     slideIndex++;
-     if (slideIndex > x.length) {slideIndex = 1}
-     x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 1000); // Change image every 2 seconds
-}
-    
 
 });

@@ -518,14 +518,19 @@ a.active {
 /* ======= INTRODUCTION ======= */
 
 #intro {
-    background: url(../img/banner/ufbanner.jpg);
+    background: url(../img/banner/ufbanner.jpg),
+     url(../img/banner/code.jpg),
+     url(../img/banner/comsolbanner.jpg),
+     url(../img/banner/cleanroom.jpg),
+     url(../img/banner/mbbio.jpg);
+
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-color: #000;
     opacity: 100%;
-    color: #000;
+    /*color: #000;*/
 }
 
 #intro .overlay {
@@ -942,6 +947,12 @@ a.fa.fa-angle-down:focus {
   /* Anchor will cover the whole item by default */
   
   /* For some effects it will show as a button */
+  #demobox {
+    background-color: #cfc ;
+    padding: 10px ;
+    border: 1px solid rgb(78, 151, 78) ;
+  }
+
   
   figure figcaption > a {
     z-index: 1000;
@@ -951,16 +962,21 @@ a.fa.fa-angle-down:focus {
     opacity: 0;
   }
   
-  figure h2 {
-    word-spacing: -0.15em;
-    font-weight: 300;
-  }
-  
+
   figure h2 span {
     font-weight: 800;
   }
   
-  figure h2,
+  figure h2{
+    margin: 0;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    word-spacing: -0.15em;
+    font-weight: 300;
+    text-transform: none;
+    color: #4f2cca 
+  }
+
   figure p {
     margin: 0;
   }
@@ -1004,7 +1020,7 @@ a.fa.fa-angle-down:focus {
     top: 50%;
     left: 0;
     width: 100%;
-    color: #484c61;
+    color: #0a26b1;
     transition: all 0.35s;
     transform: translate3d(0, -50%, 0);
   }
@@ -1620,7 +1636,7 @@ img#nu-logo {
 /* ======= RESUME ======= */
 
 #resume {
-    background: url(../img/laptop-blur.jpg);
+    background: url(../img/resume.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1678,12 +1694,68 @@ a.resume-btn:active {
     padding: 10px 30px;
 }
 
-/* ======= hyperlink styling ======= */
+/* ======= publications ======= */
+#publications {
+    background: url(../img/publish.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #000;
+    color: #fff;
+}
 
+#publications .overlay {
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0.8)), color-stop(17%, rgba(0, 0, 0, 0.73)), color-stop(35%, rgba(0, 0, 0, 0.66)), color-stop(62%, rgba(0, 0, 0, 0.55)), color-stop(100%, rgba(0, 0, 0, 0.4)));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.73) 17%, rgba(0, 0, 0, 0.66) 35%, rgba(0, 0, 0, 0.55) 62%, rgba(0, 0, 0, 0.4) 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#66000000', GradientType=0);
+    /* IE6-9 */
+    padding: 80px 0;
+    background-attachment: fixed;
+}
 
+#publications h2 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 1200rem;
+    text-transform: none;
+}
 
+a.publications-btn {
+    background: none;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ddd;
+    border: 2px solid #ccc;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    letter-spacing: 1px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
 
-
+a.publications-btn:hover,
+a.publications-btn:active {
+    /*background-position: -100% 100%;*/
+    color: #fff;
+    /*font-weight: 400;*/
+    border: 2px solid #ccc;
+    background-color: rgba(254, 254, 254, 0.2);
+    padding: 10px 30px;
+}
 
 /* ======= thumbnail experienceeeeeee ======= */
 
@@ -2055,7 +2127,7 @@ a.resume-btn:active {
 #contact p {
     font-size: 16px;
     font-weight: 300;
-    max-width: 450px;
+    max-width: 700px;
     margin: 0 auto;
 }
 
@@ -2285,7 +2357,7 @@ ul.social-buttons li a:active {
 }
 
 .modal-body p {
-    text-align: center;
+    text-align: left;
 }
 
 @media (max-width: 340px) {
@@ -2295,30 +2367,34 @@ ul.social-buttons li a:active {
 }
 
 .modal-body p.visit {
-    margin-top: 50px;
+
+    justify-content: center;
+    text-align: center;
 }
 
 .modal-body #visit-btn {
     padding: 10px;
-    color: #00009C;
-    border: 2px solid #00009C;
+    color: rgb(24, 131, 51);
+    border: 2px solid rgb(23, 73, 26);
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Lato', sans-serif;
+    font-family: 'SF Mono', sans-serif;
     font-weight: 400;
     margin: 40px 10px;
     -webkit-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out;
+    justify-content: center;
 }
 
 .modal-body #visit-btn:hover {
     color: #fff;
-    background-color: #00009C;
+    background-color: rgb(23, 73, 26);
 }
 
 .modal-description {
     font-size: 15px;
     margin: 0px 25px;
+    text-align: left;
 }
 
 @media (max-width: 340px) {

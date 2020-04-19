@@ -530,7 +530,7 @@ a.active {
     background-repeat: no-repeat;
     background-color: #000;
     opacity: 100%;
-    /*color: #000;*/
+    transition-duration: inherit;
 }
 
 #intro .overlay {

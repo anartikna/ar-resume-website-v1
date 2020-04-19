@@ -1697,6 +1697,7 @@ a.resume-btn:active {
 /* ======= publications ======= */
 #publications {
     background: url(../img/publish.jpg);
+    height: 400px;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1720,7 +1721,7 @@ a.resume-btn:active {
     /* W3C */
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#cc000000', endColorstr='#66000000', GradientType=0);
     /* IE6-9 */
-    padding: 80px 0;
+    padding: 155px 0;
     background-attachment: fixed;
 }
 
@@ -1755,178 +1756,6 @@ a.publications-btn:active {
     border: 2px solid #ccc;
     background-color: rgba(254, 254, 254, 0.2);
     padding: 10px 30px;
-}
-
-/* ======= thumbnail experienceeeeeee ======= */
-
-#experience {
-    padding-top: 90px;
-    padding-bottom: 100px;
-    background: #fff;
-}
-
-#experience * {
-    z-index: 2;
-}
-
-#experience .experience-row {
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-@media (max-width: 950px) {
-    #experience .experience-row {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-}
-
-#experience .section-heading {
-    padding-bottom: 0px;
-    margin-bottom: 20px;
-}
-
-#experience .coming-soon {
-    margin-bottom: 50px;
-    text-transform: lowercase;
-}
-
-#experience .experience-item-wrapper {
-    width: 31%;
-    display: inline-block;
-    padding: 0 0 5px;
-    margin: 0 1% 30px;
-    vertical-align: top;
-}
-
-
-
-@media (max-width: 950px) {
-    #experience .experience-item-wrapper {
-        width: 47%;
-    }
-}
-
-@media (max-width: 630px) {
-    #experience .experience-item-wrapper {
-        width: 100%;
-    }
-}
-
-#experience .experience-item {
-    display: block;
-    -webkit-box-shadow: rgba(90, 88, 88, 0.774) 0 1px 2px;
-    box-shadow: rgba(90, 88, 88, 0.774) 0 1px 2px;
-    padding: 0;
-    margin-bottom: 10px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
-
-#experience .experience-item img {
-    max-width: 100%;
-    width: 100%;
-    opacity: 1.0;
-    transition: 0.3s ease-in-out;
-    -moz-transition: 0.3s ease-in-out;
-    -webkit-transition: 0.3s ease-in-out;
-}
-
-#experience .experience-overlay {
-    position: absolute;
-    background-color: rgba(26, 30, 31, 0.85);
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-}
-
-#experience .experience-info,
-#experience .links,
-#experience .links a i,
-#experience .links a i::after,
-#experience .experience-overlay {
-    -webkit-transition: all 400ms;
-    -moz-transition: all 400ms;
-    -o-transition: all 400ms;
-    transition: all 400ms;
-}
-
-#experience .links {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 36%;
-    left: 0;
-    right: 0;
-    text-align: center;
-    margin: 0 auto;
-    opacity: 0;
-    -webkit-transform: translate(0, -50px);
-    -moz-transform: translate(0, -50px);
-    -ms-transform: translate(0, -50px);
-    -o-transform: translate(0, -50px);
-    transform: translate(0, -50px);
-}
-
-#experience .links a i {
-    position: relative;
-    color: #fff;
-    font-size: 24px;
-    margin: 0 13px;
-    z-index: 100;
-}
-
-#experience .links a:hover i {
-    color: #fff;
-}
-
-#experience .links a i::after {
-    position: absolute;
-    content: "";
-    left: -7px;
-    top: -7px;
-    width: 30px;
-    height: 30px;
-    /*border: 1px solid #fff;*/
-    z-index: -1;
-    border-radius: 50%;
-}
-
-#experience .links a:hover i::after {
-    /*background: rgba(255, 255, 255, 0.2);*/
-}
-
-#experience .experience-info {
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    background-color: rgb(100, 156, 53);
-    color: #fff;
-    height: 45px;
-    width: 100%;
-    text-align: center;
-}
-
-#experience .experience-item:hover .experience-overlay,
-#experience .experience-item:hover .links {
-    opacity: 1;
-    -webkit-transform: translate(0, 0);
-    -moz-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    transform: translate(0, 0);
-}
-
-#experience .experience-item:hover .experience-info {
-    bottom: 0;
-}
-
-#experience .experience-info h3 {
-    font-size: 14px;
-    line-height: 45px;
-    font-weight: 400;
-    margin: 0;
 }
 
 /* ======= portfolioooooo ======= */

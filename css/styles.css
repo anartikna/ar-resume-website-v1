@@ -1962,8 +1962,8 @@ a.publications-btn:active {
 
 #contact #email-button:hover {
     color: #fff;
-    background: #00009C;
-    border: 2px solid #00009C;
+    background: #222;
+    border: 2px solid #ddd;
 }
 
 @media screen and (max-width: 480px) {
